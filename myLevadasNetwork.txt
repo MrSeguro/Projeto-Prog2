@@ -1,0 +1,93 @@
+#Id, Name, Connected:
+A, Machico, [(SC, 9), (PP, 16), (PC, 20)]
+C, Câmara de Lobos, [(RB, 10), (SC, 43)]
+D, Pico Ruivo, [(PC, 11), (PP, 16), (S, 17), (SC, 18)]
+E, Santa Cruz, [(M,9), (PR, 18), (CL, 43)]
+F, Porto da Cruz, [(PR, 11), (M, 20)]
+G, Santana, [(PR, 17)]
+H, Ribeira Brava, [(CL, 10)]
+I, Ponta do Pargo, [(PR, 16), (M, 16)]
+
+J, Ponta Delgada, [(SV, 8), (PT, 9),]
+K, São Vicente, [(PD, 8), (F, 11), (SJ, 12), (P, 14), (B, 21)]
+L, São Jorge, [(B, 9), (SV, 12),]
+M, Boavista, [(PT, 4), (F, 8), (SJ, 9), (P, 1O), (SV, 21)]
+N, Pedreira, [(B, 10), (SJ, 14)]
+O, Ponta Tristão, [(B,4), (PD,9)]
+P, Fanal, [(B, 8), (SV, 11)]
+
+
+
+SC = Santa Cruz
+PC = Porto da Cruz
+S = Santana
+RB = Ribeira Brava
+M = Machico
+CL = Camera de Lobos
+PR = Pico Ruivo
+C = Calheta
+PP = Ponta do Pargo
+PD = Ponta Delgada
+SV = São Vicente
+SJ = São Jorge
+B = Boaventura
+P = Pedreira
+PT = Ponta do Tristão
+F= Fanal
+
+
+
+1-Machico - Pico Ruivo
+2-Ponta do Pargo - Porto da Cruz
+3-Santa Cruz - Ribeira    
+4-Camera de Lobos-Porto da Cruz
+5-Calheta – Pico Ruivo
+6-São Jorge-Santana 
+7,8 - São Vicente-Boaventura
+
+1-Pico Ruivo - Machico
+2-Porto da Cruz-Porto do Pargo
+3-Ribeira-Santa Cruz
+4-Porto da Cruz-Camara de Lobos
+5-Pico Ruivo –Calheta
+6-Santana-São Jorge
+7,8 - Boaventura-São Vicente
+
+
+
+1# (3caminhos) Machico - Pico Ruivo
+27, Machico, Santa Cruz, Pico Ruivo
+31, Machico, Porto da Cruz, Pico Ruivo
+32, Machico, Porto do Pargo, Pico Ruivo
+
+2# (2caminhos) Ponta do Pargo - Porto da Cruz
+27, Ponta do Pargo, Pico Ruivo, Porto da Cruz
+36, Ponta do Pargo, Machico, Porto da Cruz
+
+3# (1caminhos) Santa Cruz - Ribeira 
+53, Santa Cruz,Camera de Lobos, Ribeira
+
+4# (2caminhos iguais) Camera de Lobos-Porto da Cruz
+72, Camera de Lobos,  Pico Ruivo, Porto da Cruz
+72, Camera de Lobos, Machico, Porto da Cruz
+
+5# (não pertence) Calheta – Pico Ruivo
+Calheta out of the network
+
+6# (não há caminho) São Jorge-Santana
+Areeiro and Pico Ruivo do not communicate
+
+7# (5caminhos) São Vicente-Boaventura
+19, São Vicente, Fanal, Boaventura
+21, São Vicente, Boaventura
+21, São Vicente, São Jorge, Boaventura
+21, São Vicente, Ponta Delgada, Ponta Tristão, Boaventura
+24, São Vicente, Machico, Boaventura
+
+8# (mesma distância mais paragens) São Vicente-Boaventura
+21, São Vicente, Boaventura
+21, São Vicente, São Jorge, Boaventura
+21, São Vicente, Ponta Delgada, Ponta Tristão, Boaventura
+
+
+
