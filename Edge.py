@@ -1,10 +1,9 @@
-
 class Edge(object):
     """
     Class of Edges
     """
     
-    def __init__(self, src, dest, value=1.0):
+    def __init__(self, src, dest):
         """
         Constructs an Edge
         
@@ -15,7 +14,6 @@ class Edge(object):
         """
         self._src = src
         self._dest = dest
-        self._value = value
 
         
     def getSource(self):
@@ -30,12 +28,6 @@ class Edge(object):
         Gets the destination Node
         """
         return self._dest
-    
-    def getValue(self):
-        """
-        Gets the value of the Node
-        """
-        return self._value
 
     def __eq__(self, other):
         """
@@ -45,19 +37,11 @@ class Edge(object):
         Returns True if the names of the nodes are equal, otherwise False 
         """
         return (self.src == other.src and 
-                self.dest == other.dest and 
-                self.value == other.value)
-
-    def __lt__(self, other):
-        """
-        Ensures:
-        Returns True if the value of this node is less than the value of the other node
-        """
-        return self.value < other.value
+                self.dest == other.dest)
 
     def __str__(self):
         """
         String representation
         """
-        return self._src.getName() + '->' + self._dest.getName() + ',' + self._value.getValue()
+        return self._src.getName() + '->' + self._dest.getName() 
 

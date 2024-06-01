@@ -1,0 +1,15 @@
+1-Machico - Pico Ruivo
+2-Ponta do Pargo - Porto da Cruz
+3-Santa Cruz - Ribeira    
+4-Camera de Lobos-Porto da Cruz
+5-Calheta – Pico Ruivo
+6-São Jorge-Santana 
+7,8 - São Vicente-Boaventura
+
+1-Pico Ruivo - Machico
+2-Porto da Cruz-Porto do Pargo
+3-Ribeira-Santa Cruz
+4-Porto da Cruz-Camara de Lobos
+5-Pico Ruivo –Calheta
+6-Santana-São Jorge
+7,8 - Boaventura-São Vicente

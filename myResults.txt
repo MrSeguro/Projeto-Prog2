@@ -1,0 +1,33 @@
+1# (3caminhos) Machico - Pico Ruivo
+27, Machico, Santa Cruz, Pico Ruivo
+31, Machico, Porto da Cruz, Pico Ruivo
+32, Machico, Porto do Pargo, Pico Ruivo
+
+2# (2caminhos) Ponta do Pargo - Porto da Cruz
+27, Ponta do Pargo, Pico Ruivo, Porto da Cruz
+36, Ponta do Pargo, Machico, Porto da Cruz
+
+3# (1caminhos) Santa Cruz - Ribeira 
+53, Santa Cruz,Camera de Lobos, Ribeira
+
+4# (2caminhos iguais) Camera de Lobos-Porto da Cruz
+72, Camera de Lobos,  Pico Ruivo, Porto da Cruz
+72, Camera de Lobos, Machico, Porto da Cruz
+
+5# (não pertence) Calheta – Pico Ruivo
+Calheta out of the network
+
+6# (não há caminho) São Jorge-Santana
+Areeiro and Pico Ruivo do not communicate
+
+7# (5caminhos) São Vicente-Boaventura
+19, São Vicente, Fanal, Boaventura
+21, São Vicente, Boaventura
+21, São Vicente, São Jorge, Boaventura
+21, São Vicente, Ponta Delgada, Ponta Tristão, Boaventura
+24, São Vicente, Machico, Boaventura
+
+8# (mesma distância mais paragens) São Vicente-Boaventura
+21, São Vicente, Boaventura
+21, São Vicente, São Jorge, Boaventura
+21, São Vicente, Ponta Delgada, Ponta Tristão, Boaventura

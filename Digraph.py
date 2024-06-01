@@ -1,15 +1,15 @@
-from Node import Node
-from Edge import Edge
+from IDNode import IDNode
+from WeightEdge import WeightEdge
 
 class Digraph(object):
     def __init__(self, nodes=[], edges=[]):
         self._nodes = []
         self._edges = {}
         for node in nodes:
-            self.addNode(Node(node))
+            self.addNode(IDNode(node))
         for edge in edges:
-            src, dest, value = edge
-            self.addEdge(Edge(Node(src), Node(dest), value))
+            src, dest, weight = edge
+            self.addEdge(WeightEdge(IDNode(src), IDNode(dest), weight))
 
     def addNode(self, node):
         if node in self._nodes:
@@ -21,6 +21,7 @@ class Digraph(object):
     def addEdge(self, edge):
         src = edge.getSource()
         dest = edge.getDestination()
+
         if not(src in self._nodes and dest in self._nodes):
             raise ValueError('Node not in graph')
         self._edges[src].append(edge)
@@ -38,5 +39,7 @@ class Digraph(object):
         result = ''
         for src in self._nodes:
             for edge in self._edges[src]:
-                result += str(edge) + '\n'
+                dest = edge.getDestination()
+                result += src.getName() + '->' + dest.getName() + '\n'
         return result
+
