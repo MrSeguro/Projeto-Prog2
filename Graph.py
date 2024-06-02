@@ -1,5 +1,5 @@
 from Digraph import Digraph
-from Edge import Edge
+from WeightEdge import WeightEdge
 
 class Graph(Digraph):
     """
@@ -7,5 +7,5 @@ class Graph(Digraph):
     """
     def addEdge(self, edge):
         Digraph.addEdge(self, edge)
-        rev = Edge(edge.getDestination(), edge.getSource(), edge.getWeight())
+        rev = WeightEdge(edge.getDestination(), edge.getSource(), edge.getWeight())
         Digraph.addEdge(self, rev)

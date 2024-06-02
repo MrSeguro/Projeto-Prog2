@@ -31,6 +31,9 @@ class Digraph(object):
 
     def getEdges(self, node):
         return self._edges[node]
+    
+    def getNodes(self):
+        return self._nodes
 
     def hasNode(self, node):
         return node in self._nodes
@@ -40,6 +43,7 @@ class Digraph(object):
         for src in self._nodes:
             for edge in self._edges[src]:
                 dest = edge.getDestination()
-                result += src.getName() + '->' + dest.getName() + '\n'
+                weight = edge.getWeight()
+                result += src.getName() + '->' + dest.getName() + ', ' + str(weight) + '\n'
         return result
 
